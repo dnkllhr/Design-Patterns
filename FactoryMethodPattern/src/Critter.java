@@ -13,6 +13,8 @@ public abstract class Critter {
 
     public void eat(){
         //By making food be required to be Chow, we are promoting dependence on a type and not implementation.
+        //The fact that that an abstract operation is being called in a concrete method in
+        // a super class also makes this an example of a TemplateMethod.
         Chow food = makeChow();
         omNomNom(food);
     }
