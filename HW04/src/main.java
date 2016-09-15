@@ -5,8 +5,8 @@ public class main {
 
     public static void main(String args[]){
 
-        Currency currency1 = new Currency(2);
-        Currency currency2 = new Currency(3);
+        Currency currency1 = new Currency(5);
+        Currency currency2 = new Currency(5);
 
         System.out.println("Comparing Currency magnitudes...");
         System.out.println("currency1 value " + currency1.getAmount() + " is less than currency2 value " + currency2.getAmount() + " " + currency1.lessThan(currency2));

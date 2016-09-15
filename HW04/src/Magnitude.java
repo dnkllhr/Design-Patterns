@@ -15,7 +15,7 @@ public abstract class Magnitude {
 
     //will return true if this is equal to m false otherwise
     public final boolean equalTo(Magnitude m){
-        if(!this.lessThan(m) && !this.greaterThan(m))
+        if(!this.lessThan(m) && !m.lessThan(this))
             return true;
         return false;
     }
@@ -36,7 +36,7 @@ public abstract class Magnitude {
 
     //will return true if this is not equal to m false otherwise
     public final boolean notEqual(Magnitude m){
-        if(this.lessThan(m) || this.greaterThan(m))
+        if(!this.equalTo(m))
             return true;
         return false;
     }
